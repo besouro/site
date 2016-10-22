@@ -34,7 +34,7 @@ if (!isset($_SESSION["logado"]) && !$_SESSION["logado"]) {
 	<tr>
     	<td><?php echo($download["descricao"]); ?></td>
         <td><?php echo($download["link"]); ?></td>
-        <td><?php echo($download["foto"]); ?></td>
+        <td><img src="<?php echo($download["foto"]); ?>"  /></td>
     </tr>    
 <?php endforeach ?>
 </table>
