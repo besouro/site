@@ -42,6 +42,7 @@ function buscaDownloads($conexao) {
 	$query = "Select * from download";
 	$result = mysqli_query($conexao, $query);
 	$downloads = array();
+	while($produto = mysqli_fetch_assoc($result)) {
 		array_push($downloads, $produto);
 	}
 	return $downloads;	
