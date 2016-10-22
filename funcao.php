@@ -41,6 +41,9 @@ function SelecionaTabela($conexao, $id) {
 function buscaDownloads($conexao) {
 	$query = "Select * from download";
 	$result = mysqli_query($conexao, $query);
-	var_dump(mysqli_fetch_assoc($result));	
+	$downloads = array();
+		array_push($downloads, $produto);
+	}
+	return $downloads;	
 }
 ?>
